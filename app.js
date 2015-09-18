@@ -19,6 +19,7 @@ app.use(route.get('/async', messages.delay));
 
 // Serve static files
 app.use(serve(path.join(__dirname, 'public')));
+app.use(serve(path.join(__dirname, 'pac')));
 
 // Compress
 app.use(compress());
